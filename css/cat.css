@@ -1,0 +1,19 @@
+body {
+	padding: 2%;
+	text-align: center;
+	font-family: verdana, sans-serif;
+	font-size: 18px;
+	color: olive;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+#my-elem {
+	max-width: 850px;
+	margin: auto;
+}
+
