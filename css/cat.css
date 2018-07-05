@@ -14,6 +14,7 @@ img {
 }
 
 h5 {
+	float: left;
 	margin: 0;
 	padding: 10px;
 	text-transform: uppercase;
@@ -22,4 +23,9 @@ h5 {
 #my-elem {
 	max-width: 850px;
 	margin: auto;
+}
+
+.counter {
+	float: right;
+	font-size: 0.8em;
 }
