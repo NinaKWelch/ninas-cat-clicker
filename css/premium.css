@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 1%;
+	max-width: 800px;
+	margin: auto;
+	text-align: center;
+	font-family: verdana, sans-serif;
+	font-size: 18px;
+	color: olive;
+
+}
+
+img {
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+
+h5 {
+	float: left;
+	margin: 0;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+span {
+	float: right;
+	font-size: 0.8em;
+		padding: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+	padding: 5px 25px;
+}
