@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: verdana, sans-serif;
+	font-size: 18px;
+	color: olive;
+}
+
+div{
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+h5 {
+	float: left;
+	margin: 0;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+span {
+	float: right;
+	font-size: 0.8em;
+	padding-top: 10px;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+li {
+	display: inline-block;
+	padding: 1em;
+}
+
+@media screen and (max-width: 800px) {
+	h5,
+	span {
+		padding: 10px;
+	}
+	li {
+		padding: 0.4em;
+	}
+
+}

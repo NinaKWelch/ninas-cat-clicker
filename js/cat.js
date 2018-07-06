@@ -5,7 +5,7 @@ window.onload = loadImage;
 // VARIABLES
 var elem = document.getElementById('my-elem');
 var catImages = document.createElement('img');
-var catName = document.querySelector('.cat-name');
+var catNames = document.querySelector('.cat-name');
 var clicker = document.querySelector('.counter');
 var clicks = 0;
 
@@ -37,7 +37,7 @@ var cats = [cat1, cat2, cat3, cat4, cat5];
 function loadImage() {
 	elem.appendChild(catImages);
 	catImages.src = cat1.image;
-	catName.textContent = cat1.name;
+	catNames.textContent = cat1.name;
 };
 
 function changeImage() {
@@ -49,7 +49,7 @@ function changeImage() {
 		// append img element
 		elem.appendChild(catImages);
 		// change cat name
-		catName.textContent = cats[clicks].name;
+		catNames.textContent = cats[clicks].name;
 	};
 };
 
