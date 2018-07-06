@@ -1,5 +1,6 @@
 // VARIABLES
-var elem = document.createElement('ul');
+var elem = document.createElement('div');
+var catList = document.createElement('ul');
 var catImage = document.createElement('img');
 var catName = document.createElement('h5');
 var clickCount = document.createElement('span');
@@ -27,12 +28,16 @@ cat5.image = 'img/cat5.jpg';
 // ARRAY
 var cats = [cat1, cat2, cat3, cat4, cat5];
 
-// FUNCTIONS
-function catInfo() {
+//FUNCTION
+function loadImage() {
+    elem.appendChild(catImage);
+    catImage.src = cat1.image;
+    elem.appendChild(catName);
+    catName.textContent = cat1.name;
+};
 
-}
 
-
+// EVENT  LISTENER
 // Let's loop over the numbers in our array
 for (var i = 0; i < cats.length; i++) {
 
@@ -40,12 +45,11 @@ for (var i = 0; i < cats.length; i++) {
     var cat = cats[i];
 
     // We're creating a DOM element for the cats
-
-    var elemItem = document.createElement('li');
-    elemItem.textContent = cat.name;
+    var catListItem = document.createElement('li');
+    catListItem.textContent = cat.name;
 
     // ... and when we click, alert the value of `cat`
-    elemItem.addEventListener('click', (function(catCopy) {
+    catListItem.addEventListener('click', (function(catCopy) {
         return function() {
             elem.appendChild(catImage);
             catImage.src = catCopy.image;
@@ -59,7 +63,11 @@ for (var i = 0; i < cats.length; i++) {
         };
     })(cat));
 
-    document.body.appendChild(elem);
-    elem.appendChild(elemItem);
 
+    document.body.appendChild(elem);
+    elem.appendChild(catList);
+    catList.appendChild(catListItem);
 };
+
+// load the first image when window opens
+window.onload = loadImage;
