@@ -32,6 +32,7 @@ var cats = [cat1, cat2, cat3, cat4, cat5];
 function loadImage() {
     elem.appendChild(catImage);
     catImage.src = cat1.image;
+
     elem.appendChild(catName);
     catName.textContent = cat1.name;
 };
@@ -59,7 +60,6 @@ for (var i = 0; i < cats.length; i++) {
 
             elem.appendChild(clickCount);
             clickCount.textContent = 'Total clicks: ' + catCopy.clicks++;
-
         };
     })(cat));
 

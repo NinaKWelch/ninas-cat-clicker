@@ -7,7 +7,7 @@ body {
 	color: olive;
 }
 
-div{
+div {
 	max-width: 800px;
 	margin: 0 auto;
 	padding-bottom: 20px;
@@ -20,7 +20,7 @@ img {
 h5 {
 	float: left;
 	margin: 0;
-	padding: 10px 0;
+	/*padding: 10px 0;*/
 	text-transform: uppercase;
 }
 
@@ -31,6 +31,8 @@ span {
 }
 
 ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	margin-bottom: 10px;
 }
