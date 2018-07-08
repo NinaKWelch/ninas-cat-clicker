@@ -18,6 +18,7 @@ body {
 .cat-list li {
 	display: inline-block;
 	padding: 1em;
+	cursor: pointer;
 }
 
 .cats {
@@ -28,6 +29,7 @@ body {
 
 .cat-img {
 	width: 100%;
+	cursor: pointer;
 
 }
 
